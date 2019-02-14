@@ -1,0 +1,28 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.body {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.users {
+  text-align: center;
+}
+.card {
+  border-radius: 15px;
+  height: 90%;
+  justify-self: center;
+  width: 300px;
+  margin: 20px;
+  border: solid 1px coral;
+}
+.img-users {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
