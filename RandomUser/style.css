@@ -5,10 +5,8 @@ body {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.body {
+.container {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 .users {
   text-align: center;

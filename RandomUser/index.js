@@ -1,3 +1,4 @@
+let personajes = [];
 fetch("https://randomuser.me/api/?results=30")
   .then(value => {
     return value.json();
@@ -10,10 +11,9 @@ fetch("https://randomuser.me/api/?results=30")
     const row = document.createElement("DIV");
     row.className = "row";
     container.appendChild(row);
-    let personajes = array;
+    personajes = array;
 
-    personajes.map(myObj => {
-      console.log(myObj);
+    personajes.map((myObj, index) => {
       const containerInfo = document.createElement("DIV");
       containerInfo.className = "card";
 
@@ -23,11 +23,23 @@ fetch("https://randomuser.me/api/?results=30")
       containerInfo.appendChild(imagen);
       row.appendChild(containerInfo);
 
-      const URL = "";
+      const URL = "information.html?id=";
 
       const name = document.createElement("A");
-
+      name.setAttribute("href", URL + myObj.id.name);
+      name.setAttribute("data-position", index);
       name.innerText = myObj.name.first;
       containerInfo.appendChild(name);
+
+      name.addEventListener("click", click);
     });
   });
+
+function click(event) {
+  event.preventDefault();
+  let target = event.target;
+  let position = target.getAttribute("data-position");
+  let usuario = personajes[position];
+
+  localStorage.setItem("usuario", JSON.stringify(usuario));
+}
