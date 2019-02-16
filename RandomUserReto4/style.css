@@ -1,0 +1,22 @@
+.body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.users {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+}
+.card {
+  border-radius: 15px;
+  height: 300px;
+  justify-self: center;
+  width: 300px;
+  margin: 20px;
+  border: solid 1px coral;
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+}
