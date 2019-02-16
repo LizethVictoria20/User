@@ -36,7 +36,6 @@ fetch("https://randomuser.me/api/?results=30")
   });
 
 function click(event) {
-  event.preventDefault();
   let target = event.target;
   let position = target.getAttribute("data-position");
   let usuario = personajes[position];

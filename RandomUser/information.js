@@ -1,25 +1,11 @@
-const url = new URLSearchParams(window.location.search);
-const id = url.get("id");
+let usuarioString = localStorage.getItem("usuario");
+let objeto = JSON.parse(usuarioString);
 
-const informationID = "https://randomuser.me/api/?results=30" + url;
+let container = document.querySelector(".container");
+let name = document.createElement("H2");
+name.innerText = objeto.name.first;
+container.appendChild(name);
 
-fetch(informationID)
-  .then(value => {
-    return value.json();
-  })
-  .then(value => {
-    return value.results;
-  })
-  .then(array => {
-    array.map(obj => {
-      console.log(obj);
-      const container = document.querySelector(".container");
-      const phone = document.createElement("p");
-      phone.innerText = obj.cell;
-      container.appendChild(phone);
-
-      const name = document.createElement("H1");
-      name.innerText = obj.name.first;
-      container.appendChild(name);
-    });
-  });
+let email = document.createElement("P");
+email.innerText = objeto.email;
+container.appendChild(email);
