@@ -26,6 +26,7 @@ fetch("https://randomuser.me/api/?results=30")
       const URL = "information.html?id=";
 
       const name = document.createElement("A");
+      name.className = "nameUsers";
       name.setAttribute("href", URL + myObj.id.name);
       name.setAttribute("data-position", index);
       name.innerText = myObj.name.first;
