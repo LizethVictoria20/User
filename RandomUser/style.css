@@ -7,8 +7,18 @@ body {
   margin: 0 auto;
 }
 .container-information {
-  background: #eee;
+  background-image: linear-gradient(
+    to right top,
+    #cfd7fe,
+    #f2d6f2,
+    #ffdae2,
+    #ffe3d9,
+    #f9eedd
+  );
+  border-radius: 5px;
   width: 700px;
+  padding-top: 2%;
+  margin-top: 20px;
 }
 
 .nav {
@@ -26,6 +36,8 @@ body {
   /*position: fixed;
   z-index: 1;*/
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 nav a {
   font-size: 20px;
@@ -89,7 +101,37 @@ nav a:hover {
   border-radius: 50%;
 }
 .information {
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  display: inline-block;
+  text-align: left;
+  line-height: 40px;
+  margin-top: 23px;
+}
+.informationTitle {
+  text-align: center;
+  margin-top: 50px;
+  color: #d5caf8;
+}
+.imgUser {
+  margin: 10px auto;
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  object-fit: cover;
+}
+footer {
+  background-image: linear-gradient(
+    to right top,
+    #cfd7fe,
+    #d1d3fe,
+    #d4cefd,
+    #d7c9fb,
+    #dcc4f8
+  );
+  height: 80px;
+  font-size: 20px;
+  margin-top: 60px;
+}
+footer p {
+  margin-top: 20px;
+  padding-top: 10px;
 }
