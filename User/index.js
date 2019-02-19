@@ -18,4 +18,13 @@ fetch("https://jsonplaceholder.typicode.com/users")
       user.appendChild(name);
       row.appendChild(user);
     });
+    fetch("https://jsonplaceholder.typicode.com/photos")
+      .then(data => {
+        return data.json();
+      })
+      .then(photos => {
+        const limite = photos.slice(0, 10);
+
+        }
+      });
   });
