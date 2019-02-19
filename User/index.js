@@ -24,7 +24,15 @@ fetch("https://jsonplaceholder.typicode.com/users")
       })
       .then(photos => {
         const limite = photos.slice(0, 10);
+        const parentElemento = document.querySelector(".container");
+        const children = parentElemento.firstElementChild;
+        const childrenRow = children.children;
 
+        for (let i = 0; i < 10; i++) {
+          const containerImagen = document.createElement("IMG");
+          containerImagen.setAttribute("src", limite[i].thumbnailUrl);
+          const nodo = childrenRow[i];
+          nodo.appendChild(containerImagen);
         }
       });
   });
