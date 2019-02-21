@@ -1,10 +1,52 @@
 body {
   text-align: center;
 }
+nav {
+  background-image: linear-gradient(
+    to right top,
+    #fbeaff,
+    #e9efff,
+    #d3f5ff,
+    #c3faff,
+    #c4fcef
+  );
+  height: 80px;
+  justify-content: space-around;
+  padding: 15px;
+}
+nav a {
+  color: black;
+}
 .card {
   border-radius: 5px;
   height: 250px;
   justify-self: center;
   width: 300px;
   margin: 20px;
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 224px;
+  border-radius: 50%;
+}
+.card a {
+  margin: 10px;
+  text-decoration: none;
+  color: #e8a5f8;
+}
+.users {
+  margin: 20px;
+  color: #e8a5f8;
+}
+footer {
+  background-image: linear-gradient(
+    to right top,
+    #fbeaff,
+    #e9efff,
+    #d3f5ff,
+    #c3faff,
+    #c4fcef
+  );
+  height: 80px;
 }
