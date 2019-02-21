@@ -50,3 +50,13 @@ footer {
   );
   height: 80px;
 }
+.container-information {
+  background: #fbeaff;
+  width: 500px;
+  height: 400px;
+  margin-top: 60px;
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+}
+.info {
+  line-height: 60px;
+}
