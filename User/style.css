@@ -17,6 +17,7 @@ nav {
 nav a {
   color: black;
 }
+
 .card {
   border-radius: 5px;
   height: 250px;
@@ -36,7 +37,8 @@ nav a {
   color: #e8a5f8;
 }
 .users {
-  margin: 20px;
+  margin-right: 150px;
+  margin-top: 30px;
   color: #e8a5f8;
 }
 footer {
@@ -49,14 +51,48 @@ footer {
     #c4fcef
   );
   height: 80px;
+  margin-top: 10%;
 }
 .container-information {
-  background: #fbeaff;
+  background-image: linear-gradient(
+    to right top,
+    #a9f8dc,
+    #c3fad6,
+    #dbfbd4,
+    #eefcd7,
+    #fefedf
+  );
   width: 500px;
-  height: 400px;
+  height: 90%;
   margin-top: 60px;
   box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
 }
 .info {
-  line-height: 60px;
+  line-height: 50px;
+}
+.title-comments {
+  margin: 30px;
+  color: #e8a5f8;
+}
+.card-comments {
+  width: 100%;
+  display: inline-block;
+  text-align: justify;
+  padding: 30px;
+  border: none;
+  background-image: linear-gradient(
+    to right top,
+    #a9f8dc,
+    #c3fad6,
+    #dbfbd4,
+    #eefcd7,
+    #fefedf
+  );
+  height: 50%;
+}
+.name {
+  font-size: 15px;
+}
+.comments {
+  font-size: 20px;
 }
