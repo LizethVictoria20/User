@@ -11,8 +11,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
     array.map(myObj => {
       const user = document.createElement("DIV");
       user.className = "card";
+      const id = "information.html?id=";
       const name = document.createElement("A");
-      const id = "description.html?id=";
       name.setAttribute("href", id + myObj.id);
       name.innerText = myObj.name;
       user.appendChild(name);
