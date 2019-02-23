@@ -10,7 +10,7 @@ fetch(userID)
   .then(array => {
     console.log(array);
     const container = document.querySelector(".container");
-    const tag = document.createElement("H3");
+    const tag = document.createElement("P");
     tag.className = "info";
     tag.innerText = `
     Title: ${array.title}
