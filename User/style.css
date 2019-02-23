@@ -69,6 +69,8 @@ footer {
 }
 .info {
   line-height: 50px;
+  display: inline-block;
+  text-align: start;
 }
 .title-comments {
   margin: 30px;

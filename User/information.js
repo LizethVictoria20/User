@@ -1,7 +1,7 @@
 const url = new URLSearchParams(window.location.search);
 const id = url.get("id");
 
-const userID = "https://jsonplaceholder.typicode.com/users/" + id;
+const userID = "https://jsonplaceholder.typicode.com/todos/" + id;
 
 fetch(userID)
   .then(value => {
@@ -13,11 +13,8 @@ fetch(userID)
     const tag = document.createElement("H3");
     tag.className = "info";
     tag.innerText = `
-    Name: ${array.name}
-    Username: ${array.username}
-    Website: ${array.website}
-    City: ${array.address.city}
-    Phone: ${array.phone}
+    Title: ${array.title}
+    Completed: ${array.completed}
     `;
     container.appendChild(tag);
   });
