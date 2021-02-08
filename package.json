@@ -1,0 +1,19 @@
+{
+  "name": "doki-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizethVictoria20/User.git"
+  },
+  "author": "Lizeth Victoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizethVictoria20/User/issues"
+  },
+  "homepage": "https://github.com/LizethVictoria20/User#readme"
+}
